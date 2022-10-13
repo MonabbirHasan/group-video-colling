@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="shortcut icon" href="">
+  <title>start meating</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="meat-box">
+    <div class="container">
+      <div class="meat-content">
+        <div class="wrapper">
+<!-- local user section -->
+          <div class="local-meat">
+            <!-- <div class="video-item">
+              <video  id="remote-video"  src="images/video1.mp4" autoplay loop poster="images/crypto.png">
+              </video>
+            </div> -->
+          </div>
+<!-- local user section -->
+
+          <div class="admin">
+            <video class="admin-video" id="local-video" poster="images/crypto.png" loop autoplay ></video>
+            <!-- video coling controling button -->
+            <div class="call-controling-area">
+              <div class="controll-content">
+                <div class="buttons">
+                  <span>
+                    <button type="button" id="one_off" class="button active">
+                      <ion-icon name="power"></ion-icon>
+                    </button>
+                    <button type="button" id="webcame" class="button">
+                      <ion-icon name="videocam"></ion-icon>
+                    </button>
+                    <button type="button" id="muted" class="button">
+                      <ion-icon name="mic"></ion-icon>
+                    </button>
+                    <button type="button" class="button">
+                      <ion-icon name="shapes"></ion-icon>
+                    </button>
+                    <button onclick="startScreenShare()" type="button" class="button">
+                    <ion-icon name="tv-outline"></ion-icon>
+                    </button>
+
+                    <button  onclick="createRoom()" type="button" class="button">
+                      <ion-icon name="create-outline"></ion-icon>
+                    </button>
+
+                    <button onclick="joinRoom()" type="button" class="button">
+                      <ion-icon name="person-add-outline"></ion-icon>
+                    </button>
+
+                    <input id="room-input" class="room-input" placeholder="Enter Room ID" type="text" name="" value="">
+                  </span>
+                </div>
+                <span class="badge badge-success" id="notification" hidden></span>
+              </div>
+            </div>
+            <!-- video coling controling button -->
+          </div>
+
+          <div class="chat-section">
+            <div class="title text-center">
+              <h3>admin: name</h3>
+            </div>
+            <div class="chat-content">
+              <div class="chat-body">
+
+                <div class="chat-left">
+                  <div class="chat">
+                    <span>
+                      <img src="images/img1.jpg" alt="">
+                      <span class="name">monabbir</span>
+                    </span>
+
+                    <p>
+                      Lorem ipsum dolor sit amet,
+                      consectetur adipisicing incididunt ut
+                      elit, sed do eiusmod tempor
+                    </p>
+                  </div>
+                </div>
+
+                <div class="chat-right">
+                  <div class="chat">
+                    <span>
+                      <img src="images/img1.jpg" alt="">
+                      <span class="name">monabbir</span>
+                    </span>
+                    <p>
+                      Lorem ipsum dolor sit amet,
+                      consectetur adipisicing incididunt ut
+                      elit, sed do eiusmod tempor
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="input">
+                <input type="text" class="form-control" placeholder="please enter your message">
+                <a class="btn btn-primary" href="#" role="button">
+                  <ion-icon name="send-outline"></ion-icon>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  <script type="text/javascript">
+  
+  </script>
+  <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
